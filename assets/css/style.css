@@ -461,7 +461,7 @@ nav {
     position: absolute;
     top: 92px;
     left: 24%;
-    /* transform: rotate(-5deg); */
+    transform: rotate(-5deg);
 }
 
 .element-1-box img {
@@ -966,6 +966,235 @@ footer {
     height: auto;
 }
 
+.car-section {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.car-section img {
+    width: 61%;
+}
+
+.car-black,
+.car-pink,
+.car-white {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.car-black.animated,
+.car-pink.animated,
+.car-white.animated {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.car-black {
+    position: relative;
+    z-index: 9;
+}
+
+.car-pink {
+    position: relative;
+    z-index: 7;
+    margin-left: -33%;
+}
+
+.car-white {
+    position: relative;
+    z-index: 5;
+    margin-left: -32%;
+}
+
+.black-car-glow{
+    /* width: 100% !important; */
+    /* height: 100%; */
+    /* border: 1px solid; */
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -95px;
+}
+
+.pink-car-glow{
+    /* width: 100% !important; */
+    /* height: 100%; */
+    /* border: 1px solid; */
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 26px;
+}
+
+.white-car-glow{
+    /* width: 100% !important; */
+    /* height: 100%; */
+    /* border: 1px solid; */
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 155px;
+}
+
+.numbers-section{
+    overflow: hidden;
+    
+}
+
+.number-section-logo {
+    text-align: center;
+}
+
+.number-section-logo img {
+    width: 70%;
+}
+
+.number-section-para p {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 21px;
+    font-family: 'montserrat-arabic';
+    text-align: center;
+    font-weight: 800;
+}
+
+.cities-heading{
+    font-size: 36px;
+    font-family: 'montserrat-arabic';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.cities-number{
+    font-size: 28px;
+    font-family: 'montserrat-arabic';
+    text-align: center;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.clients-heading{
+    font-size: 36px;
+    font-family: 'montserrat-arabic';
+    text-align: center;
+    font-weight: 800;
+}
+
+.clients-number{
+    font-size: 28px;
+    font-family: 'montserrat-arabic';
+    text-align: center;
+    font-weight: 800;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Initial state for animation */
+[data-animation-fadeup] {
+    opacity: 0; /* Start invisible */
+    transform: translateY(var(--animation-fadeup)); /* Apply the start position */
+    transition: transform var(--animation-duration) ease-out, opacity var(--animation-duration);
+}
+
+/* Animated state (when JavaScript adds a class) */
+.animated {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End position (no translation) */
+}
+
+
+
+#cities-number span {
+    transition: transform 0.2s ease, opacity 0s ease;
+}
+
+#clients-number span {
+    transition: transform 0.2s ease, opacity 0s ease;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-50px); /* Move the element up */
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move the element back to original position */
+}
+.down {
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+
+/* .cities-number span {
+    transform: translateY(-50px);
+    animation: dropIn 10s linear;
+    animation-fill-mode: forwards;
+}
+
+
+.clients-number span {
+    transform: translateY(-50px);
+    animation: dropIn 10s linear;
+    animation-fill-mode: forwards;
+} */
+
+@keyframes dropIn {
+    0% {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+    }
+    10% {
+        transform: translateY(50px);
+    }
+    20% {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-50px);
+    }
+    40% {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    60% {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(-50px);
+    }
+    90% {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 
 @media only screen and (max-width : 400px) {
     .box-heading {
@@ -991,11 +1220,11 @@ footer {
     .fourh-section-heading {
         font-size: 30px;
     }
-    
+
     .rockey-money-img {
         width: 50px;
     }
-    
+
     .fourh-section-subheading {
         font-size: 19px;
     }
@@ -1006,11 +1235,11 @@ footer {
     .fourh-section-heading {
         font-size: 25px;
     }
-    
+
     .rockey-money-img {
         width: 40px;
     }
-    
+
     .fourh-section-subheading {
         font-size: 16px;
     }

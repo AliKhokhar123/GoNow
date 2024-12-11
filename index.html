@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    .swiper-pagination {
+        position: absolute !important;
+        bottom: 0 !important;
+        text-align: center !important;
+    }
+
+    .swiper-pagination-bullet {
+        display: inline-block;
+        width: 30px;
+        height: 5px;
+        background-color: #a4a6ff;
+        border-radius: 20px;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 70px;
+        height: 5px;
+        background-color: #5b60f6;
+    }
+
+    .animate__animated.animate__zoomInDown {
+        --animate-duration: 1.5s;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./assets/img/Go-Now-logo.png" alt="" style="width: 192px">
+        </div>
+        <div class="left d-flex align-items-center">
+            <div class="link">
+                <a href="#">English</a>
+            </div>
+            <div class="hamburger-icon-box d-flex align-items-center">
+                <ion-icon name="reorder-three-outline" class="hamburger-icon"></ion-icon>
+            </div>
+        </div>
+        <!-- <div class="dropdown-menu-custom">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div> -->
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar-custom">
+        <div class="close-btn">
+            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay (click outside to close) -->
+    <div class="overlay"></div>
+
+    <div class="hero-section">
+        <img src="./assets/img/background-hero-img-1.jpeg" data-aos="zoom-in" data-aos-duration="1000" alt="">
+
+    </div>
+
+    <div class="heading">
+        <h1 class="animate__animated animate__zoomIn">تطبيق قو ناو</h1>
+        <h1 class="animate__animated animate__zoomIn">!نوصلك وين ماكنت</h1>
+    </div>
+
+    <div class="main-download-section">
+        <div class="download-section">
+            <a href="#" class="app-store animate__animated animate__bounceInLeft">
+                <div class="icon"><ion-icon name="logo-apple" class="apple-icon"></ion-icon></div>
+                <div class="text">
+                    <p class="first-text">Download on the</p>
+                    <p class="second-text">App Store</p>
+                </div>
+            </a>
+            <a href="#" class="google-play animate__animated animate__bounceInRight">
+                <div class="icon"><ion-icon name="logo-google-playstore" class="playstore-icon"></ion-icon></div>
+                <div class="text">
+                    <p class="first-text">Download on</p>
+                    <p class="second-text">Google Play</p>
+                </div>
+            </a>
+        </div>
+        <div class="download-button-box">
+            <button class="animate__animated animate__zoomIn">حمل التطبيق</button>
+        </div>
+    </div>
+
+    <div class="phone-coins-section">
+        <div class="phone-img-box">
+            <img src="./assets/img/phone.png" data-aos="zoom-in" data-aos-duration="1000" class="phone-img" alt="">
+        </div>
+
+        <div class="wave-box">
+            <img src="./assets/img/background-waves.png" alt="">
+        </div>
+
+        <div class="increase-box">
+            <img src="./assets/img/increase.png" data-aos="fade-up-right" data-aos-duration="1000" alt="">
+        </div>
+
+        <div class="decrease-box">
+            <img src="./assets/img/decrease.png" data-aos="fade-down-left" data-aos-duration="1000" alt="">
+        </div>
+
+        <div class="coins-box">
+            <img src="./assets/img/coins.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+        </div>
+
+        <div class="element-1-box">
+            <img src="./assets/img/element-1.png" data-aos="fade-left" data-aos-duration="800" alt="">
+        </div>
+
+        <div class="element-2-box">
+            <img src="./assets/img/element-120.png" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300"
+                alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./assets/img/place-holder.webp" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/img/place-holder.webp" alt="Image 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/img/place-holder.webp" alt="Image 2">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="go-now-heading-box">
+        <h1 class="go-now-heading" data-aos="fade-right" data-aos-duration="1000">ليش تطبيق <span
+                class="go-text">!</span>Go <span class="highlight">Now</span>؟</h1>
+    </div>
+
+    <div class="main-paragarph-div">
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="1000">
+            <img src="./assets/img/car-removebg-preview.png" class="car-icon" alt="">
+            <h1 class="box-heading">رحلات لامحدودة</h1>
+            <h2 class="box-subheading">استمتع بتجربة التنقل الذكي الآن!</h2>
+            <p class="box-para">حقق أرباح بالقيادة من سيارتك بدخل شهري يصل حتى 7,000 ريال ويمكنك أن تحصل على راتب شهري
+                وقدره
+                3,000 ريال شهرياً في حال اكمال عدد رحلات محدد من الإدارة و وضع شعار الشركة على سيارتك لتحسين العلامة
+                التجارية الخاصة بنا وتكون بذلك
+                أحد شركاء النجاح!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-left" data-aos-duration="800">
+            <img src="./assets/img/shield-removebg-preview.png" class="box-icon" alt="">
+            <h1 class="box-heading">رحلات فائقة الآمان!</h1>
+            <h2 class="box-subheading">استمتع بتجربة التنقل الذكي الآن!</h2>
+            <p class="box-para">حقق أرباح بالقيادة من سيارتك بدخل شهري يصل حتى 7,000 ريال ويمكنك أن تحصل على راتب شهري
+                وقدره
+                3,000 ريال شهرياً في حال اكمال عدد رحلات محدد من الإدارة و وضع شعار الشركة على سيارتك لتحسين العلامة
+                التجارية الخاصة بنا وتكون بذلك
+                أحد شركاء النجاح!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="800">
+            <img src="./assets/img/coin-removebg-preview.png" class="coin-icon" alt="">
+            <h1 class="box-heading">وفّر فلوسك!</h1>
+            <h2 class="box-subheading">استمتع بتجربة التنقل الذكي الآن!</h2>
+            <p class="box-para">حقق أرباح بالقيادة من سيارتك بدخل شهري يصل حتى 7,000 ريال ويمكنك أن تحصل على راتب شهري
+                وقدره
+                3,000 ريال شهرياً في حال اكمال عدد رحلات محدد من الإدارة و وضع شعار الشركة على سيارتك لتحسين العلامة
+                التجارية الخاصة بنا وتكون بذلك
+                أحد شركاء النجاح!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-left" data-aos-duration="800">
+            <h1 class="box-heading">رحلات لامحدودة</h1>
+            <h2 class="box-subheading">استمتع بتجربة التنقل الذكي الآن!</h2>
+            <p class="box-para">حقق أرباح بالقيادة من سيارتك بدخل شهري يصل حتى 7,000 ريال ويمكنك أن تحصل على راتب شهري
+                وقدره
+                3,000 ريال شهرياً في حال اكمال عدد رحلات محدد من الإدارة و وضع شعار الشركة على سيارتك لتحسين العلامة
+                التجارية الخاصة بنا وتكون بذلك
+                أحد شركاء النجاح!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="800">
+            <h1 class="box-heading">رحلات لامحدودة</h1>
+            <h2 class="box-subheading">استمتع بتجربة التنقل الذكي الآن!</h2>
+            <p class="box-para">حقق أرباح بالقيادة من سيارتك بدخل شهري يصل حتى 7,000 ريال ويمكنك أن تحصل على راتب شهري
+                وقدره
+                3,000 ريال شهرياً في حال اكمال عدد رحلات محدد من الإدارة و وضع شعار الشركة على سيارتك لتحسين العلامة
+                التجارية الخاصة بنا وتكون بذلك
+                أحد شركاء النجاح!</p>
+        </div>
+    </div>
+
+
+    <div class="third-section">
+        <h1 class="third-section-heading pt-1" data-aos="fade-right" data-aos-duration="800">تمتع برحلات اقتصادية بكل
+        </h1>
+        <h1 class="third-section-heading" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">سهولة
+            وبضغطة
+            زر!</h1>
+        <h2 class="third-section-subheading" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">متوفر
+            لأجهزة IOS و Android</h2>
+        <div class="third-section-button-box">
+            <button class="third-section-button" data-aos="fade-right" data-aos-duration="800" data-aos-delay="900">!حمل
+                التطبيق الآن</button>
+        </div>
+        <img src="./assets/img/mobile-in-hand.png" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500"
+            class="mobile-in-hand" alt="">
+
+
+
+    </div>
+
+    <div class="numbers-section">
+        <div class="number-section-logo">
+            <img src="./assets/img/Go-Now-logo.png" data-animation-fadeup="50px" data-animation-duration="500"
+                data-animation-delay="100" alt="">
+        </div>
+        <div class="number-section-para" data-animation-fadeup="50px" data-animation-duration="500"
+            data-animation-delay="300">
+            <p>Number's</p>
+        </div>
+        <div class="counting-section d-flex justify-content-around mt-4">
+            <div class="cities text-center">
+                <div class="cities-heading" data-animation-fadeup="50px" data-animation-duration="500"
+                    data-animation-delay="500">Cities</div>
+                <div class="cities-number" id="cities-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">2</span>
+                    <span class="hidden">7</span>
+                </div>
+            </div>
+            <div class="clients text-center">
+                <div class="clients-heading" data-animation-fadeup="50px" data-animation-duration="500"
+                    data-animation-delay="700">Clients</div>
+                <div class="clients-number" id="clients-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">2</span>
+                    <span class="hidden">7</span>
+                    <span class="hidden">,</span>
+                    <span class="hidden">6</span>
+                    <span class="hidden">4</span>
+                    <span class="hidden">4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fourth-section">
+        <!-- <div class="parallex-effect-img"></div> -->
+        <div class="img">
+            <img src="./assets/img/place-holder.webp" width="100%" alt="">
+        </div>
+        <div class="fourth-section-mobile">
+            <h1 class="fourh-section-heading" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300">حقق
+                ارباح بالقيادة ! <span><img src="./assets/img/rocket-money.svg" class="rockey-money-img" alt=""></span>
+            </h1>
+            <h2 class="fourh-section-subheading" data-aos="fade-right" data-aos-duration="700" data-aos-delay="600">انضم
+                ككابتن <span class="color-blue">!</span> Go <span class="color-blue">Now</span> الآن!</h2>
+            <div class="fourth-section-button-box">
+                <button data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="900">انضم الآن!</button>
+            </div>
+
+
+            <div class="phone-coins-section" style="margin-top: 30px;">
+                <div class="phone-img-box">
+                    <img src="./assets/img/phone.png" data-aos="zoom-in" data-aos-duration="1000" class="phone-img"
+                        alt="">
+                </div>
+
+                <div class="wave-box">
+                    <img src="./assets/img/background-waves.png" alt="">
+                </div>
+
+                <div class="increase-box">
+                    <img src="./assets/img/increase-1.png" data-aos="fade-up-right" data-aos-duration="1000" alt="">
+                </div>
+
+                <div class="decrease-box">
+                    <img src="./assets/img/decrease-1.png" data-aos="fade-down-left" data-aos-duration="1000" alt="">
+                </div>
+
+                <div class="coins-box">
+                    <img src="./assets/img/coins.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+                </div>
+
+                <div class="element-1-box">
+                    <img src="./assets/img/element-1.png" data-aos="fade-left" data-aos-duration="800" alt="">
+                </div>
+
+                <div class="element-2-box">
+                    <img src="./assets/img/element-120.png" data-aos="fade-left" data-aos-duration="800"
+                        data-aos-delay="300" alt="">
+                </div>
+
+                <div class="blur-coin-box">
+                    <img src="./assets/img/blur-coin.png" data-aos="fade-left" data-aos-duration="1000" alt="">
+                </div>
+
+            </div>
+
+            <!-- Second Swiper Slider -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/place-holder.webp" alt="Image 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/place-holder.webp" alt="Image 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/place-holder.webp" alt="Image 3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="main-paragarph-div">
+
+                <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="1000">
+                    <h1 class="box-heading">نمي دخلك</h1>
+                    <h2 class="box-subheading">القيادة معنا تنمي دخلك كل يوم!</h2>
+                    <p class="box-para">حقق أرباح بالقيادة من سيارتك بدخل شهري يصل حتى 7,000 ريال ويمكنك أن تحصل على
+                        راتب شهري وقدره 3,000 ريال شهرياً في حال اكمال عدد رحلات محدد من الإدارة و وضع شعار الشركة على
+                        سيارتك لتحسين العلامة التجارية الخاصة بنا وتكون بذلك أحد شركاء النجاح!</p>
+                </div>
+
+                <div class="paragraph" data-aos="zoom-out-left" data-aos-duration="1000">
+                    <h1 class="box-heading">اكسب المزيد!</h1>
+                    <h2 class="box-subheading">حقق ارباح اكثر مع الحوافز والضمانات!</h2>
+                    <p class="box-para">اكمل عدد رحلات محددة من الإدارة لتكسب الحوافز والضمانات المدرجة في قائمة الحوافز
+                        داخل التطبيق وزيد دخلك اليومي حتى 500 ريال بكل سهولة ويمكنك تحصيلها بشكل مباشر عبر خدمة التحويل
+                        ب تكة المرتبطه بتطبيق stc !</p>
+                </div>
+
+                <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="1000">
+                    <h1 class="box-heading">حقق أهدافك!</h1>
+                    <h2 class="box-subheading">فرصتك لتحقيق حريتك المالية معنا!</h2>
+                    <p class="box-para">يمكنك الحصول على راتب شهري بالإضافة إلى دخل يومي مجدي وتحصيلها مباشرة يومياً بكل
+                        سهولة وآمان عبر محفظة المدفوعات الإلكترونية هذه هي فرصتك لتحقيق حرّبتك المالية معنا حمل التطبيق
+                        وأنضم ككابتن الآن!</p>
+                </div>
+
+            </div>
+
+            <div class="car-section">
+                <img src="./assets/img/background-glow.png" class="black-car-glow" alt="">
+                <img src="./assets/img/car-black.svg" class="car-black" alt="">
+                <img src="./assets/img/background-glow.png" class="pink-car-glow" alt="">
+                <img src="./assets/img/car-pink.svg" class="car-pink" alt="">
+                <img src="./assets/img/background-glow.png" class="white-car-glow" alt="">
+                <img src="./assets/img/car-white.svg" class="car-white" alt="">
+            </div>
+
+            <div class="location-phone-box">
+                <img src="./assets/img/phone-2.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+            </div>
+            <div class="tick-button-img-box">
+                <img src="./assets/img/button.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+            </div>
+
+            <div class="last-text-box" data-aos="fade-up" data-aos-duration="1000">
+                <h1>هل أنت مستعد لكسب</h1>
+                <h1>المزيد من الأموال ؟!</h1>
+            </div>
+
+            <div class="last-button-box">
+                <button data-aos="fade-up" data-aos-duration="1000">انضم ككابتن!</button>
+            </div>
+
+            <div class="last-img-box">
+                <div class="inner-last-box" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./assets/img/place-holder.webp" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-logo">
+            <img src="./assets/img/Go-Now-logo.png" alt="" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+        <div class="footer-text">
+            <p data-aos="fade-up" data-aos-duration="800">تواصل معنا</p>
+        </div>
+        <div class="footer-box-one">
+
+            <a href="#" class="email" data-aos="fade-up" data-aos-duration="800">
+                <p>official@go-now.com</p>
+                <img src="./assets/img/email-icon.svg" alt="">
+            </a>
+
+            <a href="#" class="dialer" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <p>920013462</p>
+                <img src="./assets/img/dialer-icon.svg" alt="">
+            </a>
+
+            <a href="#" class="email" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                <p>Live Chat</p>
+                <img src="./assets/img/chat.svg" alt="">
+            </a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
